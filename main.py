@@ -15,6 +15,9 @@ if __name__ == '__main__':
 
 
     notification = Notify()
-    notification.title = "Cool Title"
-    notification.message = "Even cooler message."
+    notification.application_name = "UIUC Registration Bot"
+    notification.title = "CLASS OPEN"
+    notification.message = "The class "+ "is now OPEN!!"
+    notification.icon = "illinoisIcon.png" # icons might not work on mac
+    notification.send(block=False)
     notification.send()
