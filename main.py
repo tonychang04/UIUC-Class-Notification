@@ -19,5 +19,6 @@ if __name__ == '__main__':
     notification.title = "CLASS OPEN"
     notification.message = "The class "+ "is now OPEN!!"
     notification.icon = "illinoisIcon.png" # icons might not work on mac
+    notification.audio = "Sound2.wav"
     notification.send(block=False)
     notification.send()
