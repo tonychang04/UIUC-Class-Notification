@@ -31,6 +31,6 @@ if __name__ == '__main__':
 
         # The time interval that the code searches for the class in secconds
         # 4 hours = 60 * 60 * 4
-        # 1 minute = 60
+        # 5 minute = 60 * 5
         # 10 sec = 10
-        time.sleep(60)
+        time.sleep(60 * 5)
