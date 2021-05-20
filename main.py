@@ -1,24 +1,37 @@
 from notifypy import Notify
-import uiuc_api as ua
+import uiucapi.query as ua
 import datetime
 import time
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print(ua.get_course("CS 173").serialize())
-    print_hi('PyCharm')
-
-
+    current_semester = "FA21"
     notification = Notify()
     notification.application_name = "UIUC Registration Bot"
     notification.title = "CLASS OPEN"
-    notification.message = "The class "+ "is now OPEN!!"
-    notification.icon = "illinoisIcon.png" # icons might not work on mac
+    notification.icon = "illinoisIcon.png"  # icons might not work on mac
     notification.audio = "Sound2.wav"
-    notification.send(block=False)
-    notification.send()
+
+    #double and triple check that the CRN is correct
+
+    courses_you_want  = [("CS 233",63735)]
+
+    for course in courses_you_want:
+        section = ua.get_course(course[0] + " " +  current_semester).sections
+        cour = ua.get_course(course[0] + " " +  current_semester)
+        for sec in section:
+            print(sec.crn == course[1])
+            if sec.crn == course[1] and 'open' in sec.registration_status.lower():
+                notification.message =  cour.name + \
+                                       " with this CRN" + str(sec.crn)  + "is now OPEN!!"
+                notification.send(block=False)
+
+
+
+    for sec in section:
+        print("CS 233" + " " + sec.section_number + " " + str(sec.crn) + "  " + sec.registration_status)
+
+
+        #print()
+    #print_hi('PyCharm')
+
