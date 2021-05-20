@@ -11,10 +11,6 @@ if __name__ == '__main__':
     notification.icon = "illinoisIcon.png"  # icons might not work on mac
     notification.audio = "Sound2.wav"
 
-    section = ua.get_course("CS 361 FA21").sections
-    for sec in section:
-        print("CS 233" + " " + sec.section_number + " " + str(sec.crn) + "  " + sec.registration_status)
-
     # double and triple check that the CRN is correct
     # enter the the courses in this format ("SUBJECT NUMBER", CRN)
     # EX: courses_you_want  = [("CS 233",63735), ("CS 233", 63733), ("CS 361", 66305)]
