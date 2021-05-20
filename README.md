@@ -2,8 +2,10 @@
 
 ![Demo](demo.png)
 
-This is a project that I created to track if the course is open. If the course is open, then notify
-the user. I created this project so that UIUC students doesn't have to refresh the registration 1000 times everyday.
+This is a project that I created to track the registration status of courses. If the course is open, then notify
+the user. I created this project so that UIUC students doesn't have to refresh the registration 1000 times and thus
+spend their time on more important tasks.
+
 So far, the two notification sites that I used before both have some disadvantages.
 The course explorer site sends out emails for notification, and sometimes it's glitchy, resulting in not sending
 any emails. Sometimes it sends out tons of emails, which ended up bombarding my inbox.
