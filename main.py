@@ -15,6 +15,7 @@ if __name__ == '__main__':
     # enter the the courses in this format ("SUBJECT NUMBER", CRN)
     # EX: courses_you_want  = [("CS 233",63735), ("CS 233", 63733), ("CS 361", 66305)]
     courses_you_want = [("CS 233", 63735), ("CS 233", 63733), ("CS 361", 66305)]
+
     while (True):
         for course in courses_you_want:
             section = ua.get_course(course[0] + " " + current_semester).sections
@@ -25,7 +26,7 @@ if __name__ == '__main__':
                     notification.message = "The class" + " with this CRN" + str(sec.crn) + " is now OPEN!!"
                     notification.send(block=False)
 
-        # The time interval that the code searches for the class in secconds
+        # Enter the time interval that the code searches for the class in seconds
         # 4 hours = 60 * 60 * 4
         # 5 minute = 60 * 5
         # 10 sec = 10

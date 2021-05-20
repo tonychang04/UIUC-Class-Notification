@@ -3,7 +3,7 @@
 ![Demo](demo.png)
 
 This is a project that I created to track the registration status of courses. If the course is open, then notify
-the user. I created this project so that UIUC students doesn't have to refresh the registration 1000 times and thus
+the user. I created this project so that UIUC students don't have to refresh the registration 1000 times and thus
 spend their time on more important tasks.
 
 So far, the two notification sites that I used before both have some disadvantages.
@@ -21,6 +21,25 @@ You have to pay to become premium in order to keep track of multiple courses.
 $ pip install notify-py 
 $ sudo pip3 install uiucapi
 ```
+
+## **How to Use**
+
+
+```
+#Change this line to becomes the tuples of the courses you want and
+#their corresponding CRN
+courses_you_want = [("CS 233", 63735), ("CS 233", 63733), ("CS 361", 66305)]
+
+#Change this line to code searches for the class in every given seconds
+# 4 hours = 60 * 60 * 4
+# 5 minute = 60 * 5
+# 10 sec = 10
+# Don't make the time too short to prevent huge computation that
+# might lag your computer
+time.sleep(60 * 5)
+```
+Run the program, and it will notify you if the class is open or have spots. Terminate
+the program once you get your spots or doesn't want the program to run
 
 ## **Bug Fix**
 Due to the recent fix in the formatting of the API, we will have to change the code in the library
