@@ -14,7 +14,7 @@ if __name__ == '__main__':
     # double and triple check that the CRN is correct
     # enter the the courses in this format ("SUBJECT NUMBER", CRN)
     # EX: courses_you_want  = [("CS 233",63735), ("CS 233", 63733), ("CS 361", 66305)]
-    courses_you_want = [("CS 446", 46793)]
+    courses_you_want = [("CS 233", 63735)]
 
     while (True):
         for course in courses_you_want:
