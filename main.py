@@ -5,6 +5,7 @@ import time
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     current_semester = "FA21"
+
     notification = Notify()
     notification.application_name = "UIUC Registration Bot"
     notification.icon = "illinoisIcon.png"  # icons might not work on mac

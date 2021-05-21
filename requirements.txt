@@ -1,2 +1,3 @@
 uiucapi~=1.0.2
 notifypy~=1.0.3.0
+notify-py~=0.3.2
