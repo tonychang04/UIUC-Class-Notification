@@ -1,4 +1,4 @@
-from notifypy import Notify
+from notifypy.notify import Notify
 import uiucapi.query as ua
 import datetime
 import time
@@ -14,7 +14,7 @@ if __name__ == '__main__':
     # double and triple check that the CRN is correct
     # enter the the courses in this format ("SUBJECT NUMBER", CRN)
     # EX: courses_you_want  = [("CS 233",63735), ("CS 233", 63733), ("CS 361", 66305)]
-    courses_you_want = [("CS 446", 46793)]
+    courses_you_want = [("CS 233",63735)]
 
     while (True):
         for course in courses_you_want:
@@ -30,4 +30,4 @@ if __name__ == '__main__':
         # 4 hours = 60 * 60 * 4
         # 5 minute = 60 * 5
         # 10 sec = 10
-        time.sleep(60 * 5)
+        time.sleep(5)
