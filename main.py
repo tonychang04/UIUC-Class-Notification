@@ -1,5 +1,4 @@
-#from notifypy import Notify
-import notifypy
+from notifypy import Notify
 import uiucapi.query as ua
 import datetime
 import time
@@ -7,7 +6,7 @@ import time
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     current_semester = "FA21"
-    notification = notifypy.Notify()
+    notification = Notify()
     notification.application_name = "UIUC Registration Bot"
     notification.icon = "illinoisIcon.png"  # icons might not work on mac
     notification.audio = "Sound2.wav"
