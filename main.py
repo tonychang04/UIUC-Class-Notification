@@ -26,6 +26,7 @@ if __name__ == '__main__':
                     notification.message = "The class" + " with this CRN" + str(sec.crn) + " is now OPEN!!"
                     notification.send(block=False)
 
+
         # Enter the time interval that the code searches for the class in second
         # 4 hours = 60 * 60 * 4
         # 5 minute = 60 * 5
