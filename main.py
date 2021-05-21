@@ -1,6 +1,6 @@
 from notifypy import Notify
 import uiucapi.query as ua
-import datetime
+
 import time
 
 # Press the green button in the gutter to run the script.
@@ -28,6 +28,7 @@ if __name__ == '__main__':
 
         # Enter the time interval that the code searches for the class in second
         # 4 hours = 60 * 60 * 4
+        # 1 hour = 60 * 60
         # 5 minute = 60 * 5
         # 10 sec = 10
         time.sleep(60 * 5)
