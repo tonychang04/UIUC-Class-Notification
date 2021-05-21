@@ -9,7 +9,7 @@ if __name__ == '__main__':
     notification = Notify()
     notification.application_name = "UIUC Registration Bot"
     notification.icon = "illinoisIcon.png"  # icons might not work on mac
-    notification.audio = "Sound2.wav"
+    notification.audio = "Sound2.wav" # sound for the notification
 
     # double and triple check that the CRN is correct
     # enter the the courses in this format ("SUBJECT NUMBER", CRN)
