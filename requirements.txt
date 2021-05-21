@@ -6,9 +6,6 @@ idna==2.10
 lark-parser==0.11.3
 loguru==0.5.3
 lxml==4.6.3
-notification==0.2.1
-Notify==0.3.1
-notify-py==0.3.2
 notifypy==1.0.3.0
 plyer==2.0.0
 PyJWT==1.7.1
