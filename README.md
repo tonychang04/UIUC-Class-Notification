@@ -19,7 +19,7 @@ You have to pay to become premium in order to keep track of multiple courses.
 ## **Installation**
 ```console
 $ pip install notify-py 
-$ sudo pip3 install uiucapi
+$ sudo pip install uiucapi
 ```
 
 ## **How to Use**
